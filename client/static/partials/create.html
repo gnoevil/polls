@@ -1,0 +1,36 @@
+<div ng-controller='PollController'>
+	<div class="container">
+    <nav class="navbar navbar-right">
+        <div class="container-fluid">
+			<ul>
+				<li><a href='#/dashboard'>Cancel</a></li>
+			</ul>
+        </div>
+</nav>
+<div class="main col-md-8">
+	<h2>Put the questions an options here:</h2>
+	<div class="form-group">
+		<label for="">Question: </label>
+		<input type='text' ng-model='new_poll.question' >
+	</div>
+	<div class="form-group">
+		<label for="">Option 1: </label>
+		<input type='text' ng-model='new_poll.option[0]'>
+	</div>
+	<div class="form-group">
+		<label for="">Option 2: </label>
+		<input type='text' ng-model='new_poll.option[1]'>
+	</div>
+	<div class="form-group">
+		<label for="">Option 3: </label>
+		<input type='text' ng-model='new_poll.option[2]'>
+	</div>
+	<div class="form-group">
+		<label for="">Option 4: </label>
+		<input type='text' ng-model='new_poll.option[3]'>
+	</div>
+	<div class="form-group">
+		<button ng-click='addPoll()'>Create Poll</button>
+	</div>
+</div> <!-- end of the main -->
+</div> <!-- end of the container -->
